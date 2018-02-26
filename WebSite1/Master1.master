@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master1.master.cs" Inherits="Master1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        title and style are placed here
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 56px;
+        }
+        .auto-style3 {
+            height: 45px;
+        }
+        .auto-style4 {
+            height: 457px;
+        }
+        .auto-style5 {
+            height: 457px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2" colspan="2" style="border: thin groove #000000; background-color: #C0C0C0; text-align: center;">Masterpage Tutorial</td>
+            </tr>
+            <tr>
+                <td class="auto-style5" rowspan="1" style="border: thin solid #000000; background-color: #999999; font-family: Georgia, 'Times New Roman', Times, serif; border-collapse: collapse; vertical-align: top;">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/About.aspx">About</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Settings.aspx">Settings</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+                </td>
+                <td class="auto-style4">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <!--Place content here-->
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" colspan="2" style="border: thin groove #000000; background-color: #C0C0C0; text-align: center;">Tutorial 2018</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
